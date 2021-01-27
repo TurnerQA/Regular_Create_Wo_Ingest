@@ -298,7 +298,9 @@
                 </ui:InvokeWorkflowFile>
               </Sequence>
             </Transition.Action>
-            <Transition.Condition>[Not SystemError Is Nothing]</Transition.Condition>
+            <Transition.Condition>
+              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Not SystemError Is Nothing" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+            </Transition.Condition>
           </Transition>
           <Transition DisplayName="T1" sap2010:WorkflowViewState.IdRef="Transition_42">
             <sap:WorkflowViewStateService.ViewState>
@@ -309,10 +311,10 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <Transition.Condition>
-              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="SystemError is Nothing" />
+              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="SystemError is Nothing" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_2" />
             </Transition.Condition>
             <Transition.To>
-              <State x:Name="__ReferenceID1" DisplayName="CreateWO_Swagger" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_3">
+              <State x:Name="__ReferenceID1" DisplayName="CreateWO_Swagger" sap:VirtualizedContainerService.HintSize="464,876" sap2010:WorkflowViewState.IdRef="State_3">
                 <State.Entry>
                   <Sequence sap:VirtualizedContainerService.HintSize="418,489" sap2010:WorkflowViewState.IdRef="Sequence_56">
                     <sap:WorkflowViewStateService.ViewState>
@@ -356,7 +358,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:InvokeWorkflowFile>
-                      <If Condition="[StatusOutputCode.Contains(&quot;200&quot;)]" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If Condition="[StatusOutputCode.Contains(&quot;200&quot;)]" DisplayName="If-" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
