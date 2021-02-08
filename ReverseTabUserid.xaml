@@ -1,6 +1,7 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ReverseTabSwagger" this:ReverseTabSwagger.userid="&lt;html app='chrome.exe' title='Swagger UI' /&gt;&#xD;&#xA;&lt;webctrl id='mUserId0.*' tag='INPUT' type='text' aaname='UserId' /&gt;&#xD;&#xA;" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ReverseTabSwagger" this:ReverseTabSwagger.selector_userid="&lt;html app='chrome.exe' title='Swagger UI' /&gt;&#xD;&#xA;&lt;webctrl tag='INPUT' name='UserId' idx='7' /&gt;&#xD;&#xA;" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="userid" Type="InArgument(x:String)" />
+    <x:Property Name="selector_userid" Type="InArgument(x:String)" />
   </x:Members>
   <sap:VirtualizedContainerService.HintSize>934,766</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
@@ -69,7 +70,7 @@
           </ui:SendHotkey>
           <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="UserId" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[userid]">
             <ui:TypeInto.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="09bca05a-e4d2-483c-834a-9e34a917cc3c" InformativeScreenshot="c68dfc77905856604ca873cf038c5637" Selector="[userid]">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="09bca05a-e4d2-483c-834a-9e34a917cc3c" InformativeScreenshot="1318e653a847589350090892766a3409" Selector="[selector_userid]">
                 <ui:Target.TimeoutMS>
                   <InArgument x:TypeArguments="x:Int32" />
                 </ui:Target.TimeoutMS>
