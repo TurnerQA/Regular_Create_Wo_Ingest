@@ -470,7 +470,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <Transition.To>
-                      <State x:Name="__ReferenceID2" DisplayName="login " sap:VirtualizedContainerService.HintSize="422,657" sap2010:WorkflowViewState.IdRef="State_4">
+                      <State x:Name="__ReferenceID2" DisplayName="login  " sap:VirtualizedContainerService.HintSize="151,71" sap2010:WorkflowViewState.IdRef="State_4">
                         <State.Entry>
                           <Sequence sap:VirtualizedContainerService.HintSize="376,270" sap2010:WorkflowViewState.IdRef="Sequence_14">
                             <sap:WorkflowViewStateService.ViewState>
